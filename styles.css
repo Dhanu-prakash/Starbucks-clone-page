@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --starbucks-green: #00704A;
+    --starbucks-black: #27251F;
+    --starbucks-white: #FFFFFF;
+    --starbucks-light-green: #D8E8E3;
+    --starbucks-warm-neutral: #F2F0EB;
+  }
+  
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+  }
+  
+
+hr{
+    border: 2px solid var(--starbucks-green);
+}
+
+h3{
+    font-weight:700;
+    font-size: medium;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "logo menu reward gift empty1 empty2 empty3 location signin join";
+    align-items: center;
+    padding:10px;
+    gap: 10px;
+    width: 100%;
+    margin:0;
+  }
+  
+  /* Grid area mapping */
+  #header-starbucks-logo { grid-area: logo; }
+  #header-menu { grid-area: menu; }
+  #header-rewards { grid-area: reward; }
+  #header-giftcards { grid-area: gift; }
+  #header-storeLocation { grid-area: location; }
+  #header-signIn { grid-area: signin; }
+  #header-join { grid-area: join;}
+  #header-empty-1{ grid-area: empty1;}
+  #header-empty-2{ grid-area: empty2;}
+  #header-empty-3{ grid-area: empty3;}
+
+
+  #header-menu:hover{
+    color: var(--starbucks-green);
+    transition: all 0.3s ease;
+  }
+
+  #header-rewards:hover{
+    color: var(--starbucks-green);
+    transition: all 0.3s ease;
+  }
+
+  #header-giftcards:hover{
+    color: var(--starbucks-green);
+    transition: all 0.3s ease;
+  }
+
+  #header-storeLocation:hover{
+    color: var(--starbucks-green);
+    transition: all 0.3s ease;
+  }
+  
+#submit-signin{
+    height: 3em;
+    width: 6em;
+    border-radius:20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#submit-join{
+    cursor: pointer;
+    height: 3em;
+    width: 6em;
+    border-radius:20px;
+    background-color: var(--starbucks-black);
+    color:var(--starbucks-warm-neutral);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#submit-signin:hover{
+    background-color: var(--starbucks-warm-neutral);
+}
+#submit-join:hover{
+    background-color: rgba(0,0,0,0.4);
+}
